@@ -1,0 +1,14 @@
+.container .row .web3{
+    width: 750px;
+    height:450px ;
+    margin-top: 45px;
+}
+
+@media (max-width: 900px) {
+   .container .row .web3{
+    position: center;
+    /*right: inherit;*/
+  }
+  .ph{
+  	
+  }

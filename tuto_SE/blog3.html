@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Why Do Arrays Start With Index 0?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- icon in the highest resolution we need it for -->
+<link rel="icon" sizes="192x192" href="images/lg.png">
+
+<!-- reuse same icon for Safari -->
+<link rel="apple-touch-icon" href="ios-icon.png">
+
+<!-- multiple icons for IE -->
+<meta name="msapplication-square310x310logo" content="icon_largetile.png">
+  </head>
+  <body>
+
+    <header role="banner">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <img src="images/logo2.png" style="width:60px;height:60px;">
+        <a class="navbar-brand absolute" href="index.html">TUTO S.E</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown05">
+                  <a class="dropdown-item" href="web.html">Web Developpement</a>
+                  <a class="dropdown-item" href="mobile.html">Mobile Developpement </a>
+                  <a class="dropdown-item" href="ML.html">Machine-learning</a>
+                  <a class="dropdown-item" href="PL.html">Programming Languages</a>
+              <!--    <a class="dropdown-item" href="courses.html"></a>-->
+                </div>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+
+    <section class="site-hero site-sm-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/blog.jpg);">
+      <div class="container">
+        <div class="row align-items-center justify-content-center site-hero-sm-inner">
+          <div class="col-md-7 text-center">
+
+        <!--    <div class="mb-5 element-animate">
+          <h1  class="mb-2">Our Blog</h1>
+              <p class="bcrumb"><a href="index.html">Home</a> <span class="sep ion-android-arrow-dropright px-2"></span>  <span class="current">Blog</span></p>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-lg-8 order-md-2 pl-lg-5">
+            <div class="row">
+              <div class="col-md-12 col-lg-12 mb-5">
+
+                <h1> Why Do Arrays Start With Index 0? </h1>
+
+                  <p class="lead"> Whether you code in JavaScript, Python, Java, PHP, Ruby, or Go, to access the first element of the array you will need to refer to array[0]. This is often confusing for new developers — why do we start numeration from zero? Wouldn’t be array[1] a more obvious choice for the first item?</p>
+                  <p> First, it’s worth to point out that not every programming language follows zero-based numbering. Before I decided to write this post I was aware of Lua breaking that convention, but I was very surprised to discover that this is not such a rare occurrence.</p>
+
+<p>AWK, COBOL, Fortran, R, Julia, Lua, MATLAB, Smalltalk, Wolfram Language — In all of these languages the default index of the first element in an array is one.
+(Full list can be found on the Wikipedia).</p>
+                 <p>“Referencing memory by an address and an offset is represented directly in computer hardware on virtually all computer architectures, so this design detail in C makes compilation easier … “ — Wikipedia.</p>
+
+                  <h4> To illustrate that, we can run the C program below:</h4>
+                  <p>
+                    <p>#include <stdio.h></p>
+<p>int main()</p>
+<p>{</p>
+<p>    int data[6] = {1, 2, 3, 4, 5, 6};</p>
+  <p>  int i = 0;</p>
+
+  <p>  printf("Array address: %p\n", data);</p>
+
+  <p>  do {</p>
+    <p>    printf("Array[%u] = %p\n", i, (void *)(&data[i]));</p>
+    <p>    i++;</p>
+<p>    } while(i < 6);</p>
+<p>} </p>
+
+<h4>Output:</h4>
+                 <p>
+                   <p>Array address: 0x7ffe9472bad0</p>
+                <p>Array[0] = 0x7ffe9472bad0</p>
+<p>Array[1] = 0x7ffe9472bad4</p>
+<p>Array[2] = 0x7ffe9472bad8</p>
+<p>Array[3] = 0x7ffe9472badc</p>
+<p>Array[5] = 0x7ffe9472bae4 </p>
+
+                  <p>As we can see on this example, the first element and the array itself points to the same memory location, so it is 0 elements away from the location of the array itself.</p>
+
+                     <p> On the other hand, I also find out that many answers point to the article written by Dijkstra: <a href="http://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html">Why numbering should start at zero.</a> It explains the problem of how to denote the sub-sequence of natural numbers. I find its reasoning interesting from the mathematical perspective. However, as C language predates this paper it does not seem to be relevant to the question.</p>
+                        <h4> Référence:<a href="https://medium.com/@albertkoz/why-does-array-start-with-index-0-65ffc07cbce8" tag="blank"> Medium blog/Why Do Arrays Start With Index 0?</a></h4>
+
+          
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

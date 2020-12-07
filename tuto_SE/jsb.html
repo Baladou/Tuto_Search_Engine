@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Javascript for Beginner</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+      <link rel="manifest" href="/manifest.json">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="A sample weather app">
+    <!-- CODELAB: Add meta theme-color -->
+    <meta name="theme-color" content="#2F3BA2" />
+
+
+        <!-- icon in the highest resolution we need it for -->
+    <link rel="icon" sizes="192x192" href="images/lg.png">
+
+    <!-- reuse same icon for Safari -->
+    <link rel="apple-touch-icon" href="ios-icon.png">
+
+    <!-- multiple icons for IE -->
+    <meta name="msapplication-square310x310logo" content="icon_largetile.png">
+  </head>
+  <body>
+
+    <header role="banner">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <img src="images/logo2.png" alt="logo" style="width:60px;height:60px;">
+          <a class="navbar-brand absolute" href="index.html">TUTO S.E</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown05">
+                  <a class="dropdown-item" href="web.html">Web Developpement</a>
+                  <a class="dropdown-item" href="mobile.html">Mobile Developpement </a>
+                  <a class="dropdown-item" href="ML.html">Machine-learning</a>
+                   <a class="dropdown-item" href="PL.html">Programming Languages</a>
+                  <a class="dropdown-item" href="#"></a>
+                </div>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+
+    <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/test8.jpeg);">
+         <div class="overlay">
+        <div class="container">
+
+
+        <div class="row align-items-center justify-content-center site-hero-inner">
+          <div class="col-md-10">
+
+            <div class="mb-5 element-animate">
+              <div class="block-17">
+                  <h2 class="heading text-center mb-4" style= "color:#ffffff">  Find the right Tutoriel for you  </h2>
+                  <h2 class="heading text-center mb-4" style= "color:#ffffff" >  with our search engine  </h2>
+
+                <form action="index.php" method="post" class="d-block d-lg-flex mb-4">
+                  <div class="fields d-block d-lg-flex">
+                    <div class="textfield-search one-third">
+
+                        <input type="text" class="form-control" placeholder="Keyword search..." name="key"></div>
+
+                    <div class="select-wrap one-third">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+
+                     <select name=" category" id="" class="form-control">
+                        <option value="0">Category Course</option>
+                        <option value="Web">Web Developpement</option>
+                        <option value="Mobile">Mobile Developpement</option>
+                        <option value="Machine">Machine-Learning</option>
+                        <option value="Prog">Programming Languages</option>
+                        <option value="a">Autres</option>
+                      </select>
+
+                    </div>
+
+                    <div class="select-wrap one-third">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select name="difficulty" id="" class="form-control">
+                        <option value="0">Difficulty</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advance">Advanced</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                  <input name="sub" type="submit" class="search-submit btn btn-primary" value="Search" >
+                </form>
+
+
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+        </div>
+    </section>
+    <!-- END section -->
+
+
+
+
+<div class="site-section bg-light element-animate">
+
+
+
+
+
+      <div class="container">
+        <div class="diff"><h1>Beginner courses</h1></div>
+        <div class="row">
+          <div class="col-md-12 mb-2">
+            <h2>Tutorials</h2>
+          </div>
+        </div>
+        <div class="row bg-light align-items-center p-4 episode">
+          <div class="col-md-10">
+            <p class="meta">Tutorial 1 <a href="#">French</a></p>
+            <h2><a href="https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript" target="_blank">Openclassrooms</a></h2>
+            <p>Notre monde est devenu numérique. Votre travail, vos loisirs, vos lectures, vos envies sont de plus en plus reliés à votre ordinateur ou votre smartphone.......</p>
+          </div>
+          <div class="col-md-2 text-center">
+            <a href="https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript" class="btn btn-primary reverse py-2 px-4" target="_blank">Visit Tutorial</a>
+          </div>
+        </div>
+
+        <div class="row align-items-center p-4 episode">
+          <div class="col-md-10">
+            <p class="meta">Tutorial 2 <a href="#">English</a></p>
+            <h2><a href="https://www.w3schools.com/js/default.asp" target="_blank"> W3schools</a></h2>
+            <p>JavaScript is the programming language of HTML and the Web.
+
+JavaScript is easy to learn......</p>
+          </div>
+          <div class="col-md-2 text-center">
+            <a href="https://www.w3schools.com/js/default.asp" class="btn btn-primary reverse py-2 px-4" target="_blank">Visit Tutorial</a>
+          </div>
+        </div>
+
+       <div class="row bg-light align-items-center p-4 episode">
+          <div class="col-md-10">
+            <p class="meta">Tutorial 3 <a href="#">English</a></p>
+            <h2><a href="https://htmldog.com/guides/javascript/" target="_blank">HTML Dog</a></h2>
+            <p>Originally designed for adding small amounts of interactivity to a page (like hovers and animations - you know the kind of thing), JavaScript is now used for almost anything up to large applications and .....</p>
+          </div>
+          <div class="col-md-2 text-center">
+            <a href="https://htmldog.com/guides/javascript/" class="btn btn-primary reverse py-2 px-4" target="_blank">Visit Tutorial</a>
+          </div>
+        </div>
+
+        <div class="row align-items-center p-4 episode">
+          <div class="col-md-10">
+            <p class="meta">Tutorial 4 <a href="#">English</a></p>
+            <h2><a href="https://www.javascript.com/" target="_blank"> javascript</a></h2>
+            <p>JavaScript from beginner to advance.
+
+JavaScript is easy to learn......</p>
+          </div>
+          <div class="col-md-2 text-center">
+            <a href="https://www.javascript.com/" class="btn btn-primary reverse py-2 px-4" target="_blank">Visit Tutorial</a>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </section>
+          </div>
+          <!-- END content -->
+
+
+
+     <div class="site-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 element-animate">
+          <div class="col-md-7 text-center section-heading">
+            <h2 class="text-primary heading">Popular Courses</h2>
+            <p>Here are some courses that people search for the most.</p>
+          <!--  <p><a href="#" class="btn btn-primary py-2 px-4"><span class="ion-ios-book mr-2"></span>Enroll Now</a></p> -->
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid block-11 element-animate">
+        <div class="nonloop-block-11 owl-carousel">
+          <div class="item">
+            <div class="block-19">
+                <figure>
+                  <img src="images/m.png" style="width:430px;height:200px;" alt="Image" class="img-fluid">
+                </figure>
+                <div class="text">
+                  <h2 class="heading"><a href="https://fr.coursera.org/learn/machine-learning">Machine learning</a></h2>
+                  <p class="mb-4">An introductory course on deep learning methods with applications to machine translation, image recognition, game playing, image generation and more. </p>
+                  <div class="meta d-flex align-items-center">
+                   <div class="number">
+
+                  </div>
+                    <div class="price text-right"> <span>Free</span></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="item">
+            <div class="block-19">
+                <figure>
+                  <img src="images/java.jpg" alt="Image" class="img-fluid">
+                </figure>
+                <div class="text">
+                  <h2 class="heading"><a href="https://fr.coursera.org/specializations/java-programming">Java</a></h2>
+                  <p class="mb-4">Learn to program in the Java programming language. This course assumes no prior programming knowledge, just a desire to learn to program.</p>
+                  <div class="meta d-flex align-items-center">
+                    <div class="number">
+
+                    </div>
+                    <div class="price text-right"> <span>Free</span></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="item">
+            <div class="block-19">
+              <figure>
+                <img src="images/python.jpg"
+
+style="width:430px;height:200px;" alt="Image" class="img-fluid">
+              </figure>
+              <div class="text">
+                <h2 class="heading"><a href="https://fr.coursera.org/specializations/python">Python</a></h2>
+                <p class="mb-4">In this course, you will learn Python 3 in a practical manner. You will start by downloading and setting up Python on your machine and then slowly move on to different topics.</p>
+                <div class="meta d-flex align-items-center">
+                  <div class="number"></div>
+
+                  <div class="price text-right"> <span>Free</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  <!--        -->
+                </div>
+              </div>
+            </div>
+
+    <!-- END section -->
+
+
+    <div class="container site-section element-animate">
+      <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center section-heading">
+            <h2 class="text-primary heading">Quotes</h2>
+
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="block-2">
+            <div class="flipper">
+              <div class="front" style="background-image: url(/images/bill.jpg);">
+                <div class="box">
+                  <h2>Bill Gates</h2>
+                  <p>Microsoft founder</p>
+                </div>
+              </div>
+              <div class="back">
+                <!-- back content -->
+                <blockquote>
+                  <p>&ldquo;“I think it's fair to say that personal computers have become the most empowering tool we've ever created. They're tools of communication, they're tools of creativity, and they can be shaped by their user.”&rdquo;</p>
+                </blockquote>
+                <div class="author d-flex">
+                  <div class="image mr-3 align-self-center">
+                    <img src="images/bill.jpg" alt="">
+                  </div>
+                  <div class="name align-self-center">Bill Gates <span class="position">Microsoft founder</span></div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- .flip-container -->
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="block-2 ">
+            <div class="flipper">
+              <div class="front" style="background-image: url(/images/stephen.png);">
+                <div class="box">
+                  <h2>Stephen Hawking</h2>
+                  <p>theoretical physicist</p>
+                </div>
+              </div>
+              <div class="back">
+                <!-- back content -->
+                <blockquote>
+                  <p>&ldquo;“Whether you want to uncover the secrets of the universe, or you just want to pursue a career in the 21st century, basic computer programming is an essential skill to learn.”&rdquo;</p>
+                </blockquote>
+                <div class="author d-flex">
+                  <div class="image mr-3 align-self-center">
+                    <img src="images/stephen.png" alt="">
+                  </div>
+                  <div class="name align-self-center">Stephen Hawking <span class="position">theoretical physicist</span></div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- .flip-container -->
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="block-2">
+            <div class="flipper">
+              <div class="front" style="background-image: url(/images/steven.png);">
+                <div class="box">
+                  <h2>Steve Jobs</h2>
+                  <p>Apple founder</p>
+                </div>
+              </div>
+              <div class="back">
+                <!-- back content -->
+                <blockquote>
+                  <p>&ldquo;“Everybody should learn to program a computer, because it teaches you how to think.”&rdquo;</p>
+                </blockquote>
+                <div class="author d-flex">
+                  <div class="image mr-3 align-self-center">
+                    <img src="images/steven.png" alt="">
+                  </div>
+                  <div class="name align-self-center">Steve Jobs <span class="position">Apple founder</span></div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- .flip-container -->
+        </div>
+      </div>
+    </div>
+    <!-- END .block-2 -->
+
+
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 element-animate">
+          <div class="col-md-7 text-center section-heading">
+            <h2 class="text-primary heading">Blog</h2>
+
+          </div>
+        </div>
+        <div class="row element-animate">
+
+          <div class="col-md-12 mb-5 mb-lg-0 col-lg-6">
+
+            <div class="block-20 ">
+              <figure>
+                <a href="#"><img src="images/prgm.jpg" alt="" class="img-fluid"></a>
+              </figure>
+              <div class="text">
+                <h3 class="heading"><a href="blog1.html" target="_blank">How to choose a programming language?</a></h3>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-12 col-lg-6">
+
+            <div class="block-21 d-flex mb-4">
+              <figure class="mr-3">
+                <a href="#"><img src="images/blg.jpg" alt="" class="img-fluid"></a>
+              </figure>
+              <div class="text">
+                <h3 class="heading"><a href="blog2.html">How to get a Harvard-level education in 15 minutes per day (or less)</a></h3>
+
+
+              </div>
+            </div>
+
+              <div class="block-21 d-flex mb-4">
+              <figure class="mr-3">
+                <a href="#"><img src="images/arrays.jpg" alt="" class="img-fluid"></a>
+              </figure>
+              <div class="text">
+                <h3 class="heading"><a href="blog3.html" tag="blank">Why Do Arrays Start With Index 0?</a></h3>
+
+              </div>
+            </div>
+
+            <div class="block-21 d-flex mb-4">
+              <figure class="mr-3">
+                <a href="#"><img src="images/php.jpg" alt="" class="img-fluid"></a>
+              </figure>
+              <div class="text">
+                <h3 class="heading"><a href="blog4.html">5 Free PHP and MySQL Courses to Learn Web Development</a></h3>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--
+-->
+     <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+            <img src="images/logo2.png" alt="logo" style="width:60px;height:60px;">
+          <a class="navbar-brand absolute" href="index.html">TUTO S.E</a>
+            <p><h2 class="heading text-center mb-4" > <!--"If you can't explain it simply, you don't unserstand it well enough" -->
+          Find the right Tutoriel for you with our search engine.  </h2></p>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+            <h3 class="heading">Quick Link</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                <!--  <li><a href="#">Courses</a></li> -->
+            </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+            <h3 class="heading">Contact Information</h3>
+            <div class="block-23">
+              <ul>
+                <li><span class="icon ion-android-pin"></span><span class="text">Av Allal Al fassi, Madinat El Irfane, Rabat, MOROCCO</span></li>
+                <li><a href="#"><span class="icon ion-ios-telephone"></span><span class="text">+212646506520</span></a></li>
+                <li><a href="#"><span class="icon ion-android-mail"></span><span class="text">tutose@gmail.com</span></a></li>
+          <!--      <li><span class="icon ion-android-time"></span><span class="text">Monday &mdash; Friday 8:00am - 5:00pm</span></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-md-12 text-center copyright">
+
+          </div>
+        </div>
+
+    </footer>  <!-- END footer -->
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+
+  </body>
+</html>
